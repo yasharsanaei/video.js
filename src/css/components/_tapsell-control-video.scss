@@ -1,0 +1,29 @@
+.video-js .tapsell-vjs-control-video {
+  position: absolute;
+  bottom: var(--tapsell-vjs-spacer-y);
+  left: var(--tapsell-vjs-spacer-x);
+  width: var(--tapsell-vjs-button-width);
+  height: var(--tapsell-vjs-button-height);
+  border-radius: var(--tapsell-vjs-border-radius);
+  border: var(--tapsell-vjs-border-width) var(--tapsell-vjs-border-style) var(--tapsell-vjs-border-color);
+  opacity: var(--tapsell-vjs-opacity);
+  background-color: var(--tapsell-vjs-button-background-color);
+  color: var(--tapsell-vjs-color);
+
+  &:before {
+    @extend %icon-default;
+    font-size: var(--tapsell-vjs-font-size);
+    line-height: 1;
+    text-align: center;
+    align-content: center;
+  }
+
+  &.tapsell-vjs-play:before {
+    @extend .vjs-icon-play;
+  }
+
+  &.tapsell-vjs-pause:before {
+    @extend .vjs-icon-pause;
+  }
+
+}
