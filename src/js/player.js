@@ -42,16 +42,19 @@ import SpatialNavigation from './spatial-navigation.js';
 // execute them and they will register themselves with video.js.
 import './tech/loader.js';
 import './poster-image.js';
-import './tracks/text-track-display.js';
 import './loading-spinner.js';
-import './big-play-button.js';
-import './close-button.js';
-import './control-bar/control-bar.js';
-import './error-display.js';
-import './tracks/text-track-settings.js';
-import './resize-manager.js';
-import './live-tracker.js';
-import './title-bar.js';
+import './tapsell-video-control.js';
+import './tapsell-volume-control.js';
+
+// import './tracks/text-track-display.js';
+// import './big-play-button.js';
+// import './close-button.js';
+// import './control-bar/control-bar.js';
+// import './error-display.js';
+// import './tracks/text-track-settings.js';
+// import './resize-manager.js';
+// import './live-tracker.js';
+// import './title-bar.js';
 
 // Import Html5 tech, at least for disposing the original video tag.
 import './tech/html5.js';
@@ -5442,17 +5445,19 @@ Player.prototype.options_ = {
 
   // Included control sets
   children: [
-    'mediaLoader',
-    'posterImage',
-    'titleBar',
-    'textTrackDisplay',
+    // 'mediaLoader',
+    // 'posterImage',
+    // 'titleBar',
+    // 'textTrackDisplay',
     'loadingSpinner',
-    'bigPlayButton',
-    'liveTracker',
-    'controlBar',
+    // 'bigPlayButton',
+    // 'liveTracker',
+    // 'controlBar',
     'errorDisplay',
-    'textTrackSettings',
-    'resizeManager'
+    // 'textTrackSettings',
+    // 'resizeManager',
+    'TapsellVolumeControl',
+    'TapsellVideoControl'
   ],
 
   language: navigator && (navigator.languages && navigator.languages[0] || navigator.userLanguage || navigator.language) || 'en',
